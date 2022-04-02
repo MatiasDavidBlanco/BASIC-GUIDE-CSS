@@ -1,0 +1,182 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+html{
+
+	scroll-behavior: smooth;
+}
+#main-doc{
+    display: flex;
+    flex-direction: row;
+}
+#navbar{
+    display:block;
+    flex-direction: column;
+    font-family:'Open Sans', Arial, sans-serif;
+    padding: 30px;
+    height: 100%;
+    position: fixed;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+#navbar header{
+   text-align: center;
+   height: 54px;
+    
+}
+
+#navbar header h1{
+    margin: 12px;
+    font-size: 20px;
+     
+ }
+
+
+#nav_link_container{
+    display: flex;
+    flex-direction: column;
+    
+
+
+}
+
+.nav-link{
+   
+    margin: 20px;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: solid;
+    border-width: 1px;
+   
+    
+}
+
+.nav-link:hover{
+   
+    color: rgb(41, 131, 131);
+    
+}
+
+
+.main-section{
+
+    display: flex;
+    flex-direction: column;
+    font-family:'Open Sans', Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 270px;
+    margin-top: 30px;
+    line-height: 2.5;
+
+}
+
+
+
+
+#secciones{
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.header{
+
+    background:linear-gradient(rgb(186, 186, 199), #80ffd4);
+    align-self: inherit;
+    padding: 10px;
+    
+
+
+}
+
+li{
+    list-style:disc;
+    margin-left: 41px;
+
+
+}
+code{
+
+    background: linear-gradient(#c4e7e4, #b4b6b5);
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 17px;
+
+}
+
+img{
+
+    height: auto;
+    width: 50%;
+    padding: 20px;
+    align-self: center;
+    
+
+}
+@media screen and (max-width: 600px){
+    #main-doc{
+            
+        flex-direction: column  ;
+    }
+    img{
+
+        width: 85%;
+    }
+
+    #navbar{
+        width: 20%;;
+    }
+
+    #navbar header{
+        text-align: center;
+        height: 45px;
+        
+         
+    }
+     
+     #navbar header h1{
+        
+         font-size: 10px;
+          
+    }
+    .nav-link{
+
+        font-size: 8px;
+        margin: 4px;
+        text-align: center;
+    }
+
+    #nav_link_container {
+        margin: -4px;
+    }
+
+    .main-section{
+
+        width: 65%;
+        font-size: 12px;
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+     
+
+
+}
+

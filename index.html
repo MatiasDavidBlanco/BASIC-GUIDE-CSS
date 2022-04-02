@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation Page </title>
+</head>
+
+<body>
+
+    <main id="main-doc">
+
+        <nav id="navbar">
+
+            <header class="header">
+                <h1> GUIA BÁSICA CSS</h1>
+            </header>
+            <div id="nav_link_container">
+                <a class="nav-link" href="#INTRODUCCION">INTRODUCCION</a>
+                <a class="nav-link" href="#SINTAXIS">SINTAXIS</a>
+                <a class="nav-link" href="#SELECTORES">SELECTORES</a>
+                <a class="nav-link" href="#FONDOS">FONDOS</a>
+                <a class="nav-link" href="#WEB_RESPONSIVE">WEB RESPONSIVE</a>
+                <a class="nav-link" href="#REFERENCIAS">REFERENCIAS</a>
+            </div>
+        </nav>
+        <div id="secciones">
+            <section class="main-section" id="INTRODUCCION">
+                <header class="header">
+                    <h2>INTRODUCCION</h2>
+                </header>
+                <p class="parrafos">CSS es el lenguaje que usamos para diseñar una página web.</p>
+                <ul>
+                    <li>CSS son las siglas de Cascading Style Sheets.</li>
+                    <li>CSS describe cómo se mostrarán los elementos HTML en la pantalla, el papel o en otros medios.</li>
+                    <li>CSS ahorra mucho trabajo. Puede controlar el diseño de varias páginas web a la vez.</li>
+                    <li>Las hojas de estilo externas se almacenan en archivos CSS.</li>
+                </ul>
+                <p class="parrafos"><b>¿Por qué utilizar CSS?</b> CSS se utiliza para definir estilos para sus páginas web, incluido el diseño, el diseño y las variaciones en la visualización para diferentes dispositivos y tamaños de pantalla.</p>
+
+            </section>
+
+            <section class="main-section" id="SINTAXIS">
+                <header class="header">
+                    <h2> SINTAXIS</h2>
+                </header>
+                <p class="parrafos">Una regla CSS consta de un selector y un bloque de declaración.</p>
+                
+                <img src="https://www.w3schools.com/css/img_selector.gif" alt= "EJEMPLO">
+
+                <ul>
+                    <li> El selector apunta al elemento HTML al que desea aplicar estilo.</li>
+
+                    <li> El bloque de declaración contiene una o más declaraciones separadas por punto y coma.</li>
+                    
+                    <li>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.</li>
+                    
+                    <li> Varias declaraciones CSS se separan con punto y coma y los bloques de declaración están rodeados por llaves.</li>
+                </ul>
+
+                <p class="parrafos">En este ejemplo, todos los elementos estarán alineados al centro, con un color de texto rojo:</p>
+                <Code>
+                    p {
+                        color: red;
+                        text-align: center;
+                    }
+                </Code>
+                
+                <p class="parrafos">Ejemplo explicado:</p>
+                <ul>
+                    <li> p es un selector en CSS (apunta al elemento HTML que desea aplicar estilo: p ).</li>
+
+                    <li> color es una propiedad y redes el valor de la propiedad.</li>
+                    
+                    <li>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.</li>
+                    
+                    <li> text-alignes una propiedad y centeres el valor de la propiedad.</li>
+                </ul>
+
+            </section>
+
+            <section class="main-section" id="SELECTORES">
+                <header class="header">
+                    <h2> SELECTORES</h2>
+                </header>
+                <p class="parrafos">Un selector de CSS selecciona los elementos HTML a los que desea aplicar estilo.</p>
+                
+                <p class="parrafos"> Podemos dividir los selectores de CSS en cinco categorías:</p>
+                <ul>
+                    <li><b>Selectores simples</b>  (seleccione elementos según el nombre, la identificación, la clase).</li>
+                    <li><b>Selectores de combinador</b>  (seleccione elementos en función de una relación específica entre ellos).</li>
+                    <li><b>Selectores de pseudoclase</b>  (seleccionar elementos basados ​​en un cierto estado).</li>
+                    <li><b>Selectores de pseudoelementos </b> (seleccionar y aplicar estilo a una parte de un elemento).</li>
+                    <li><b>Selectores de atributos</b>  (seleccione elementos basados ​​en un atributo o valor de atributo)</li>
+                </ul>
+
+                <p class="parrafos"> En este ejemplo, el selector de elementos selecciona elementos HTML según el nombre del elemento:</p>
+                <Code>
+                    p {
+                        color: red;
+                        text-align: center;
+                    }
+                </Code>
+
+            </section>
+
+            <section class="main-section" id="FONDOS">
+                <header class="header">
+                    <h2> FONDOS</h2>
+                </header>
+                <p class="parrafos">Las propiedades de fondo de CSS se utilizan para agregar efectos de fondo a los elementos..</p>
+                
+                <p class="parrafos"> Podemos aplicar diferentes propiedades a un fondo en CSS:</p>
+                <ul>
+                    <li> La propiedad <b> background-color </b>  especifica el color de fondo de un elemento.</li>
+                    <li> La propiedad <b>background-image</b>  especifica una imagen para usar como fondo de un elemento.</li>
+                    <li> De forma predeterminada, la propiedad <b>background-image</b>  repite una imagen tanto horizontal como verticalmente.</li>
+                    <li> La propiedad <b>background-attachment</b>  especifica si la imagen de fondo debe desplazarse o ser fija (no se desplazará con el resto de la página).</li>
+                    <li> Para acortar el código, también es posible especificar todas las propiedades de fondo en una sola propiedad. A esto se le llama propiedad taquigráfica.</li>
+                </ul>
+
+                <p class="parrafos"> En lugar de escribir:<p>
+
+                <code>
+                    body {
+                        background-color: #ffffff;
+                        background-image: url("img_tree.png");
+                        background-repeat: no-repeat;
+                        background-position: right top;
+                    }
+                </Code>
+
+                <p class="parrafos"> Puede utilizar la propiedad abreviada background:<p>
+
+                <code>
+                
+                    body {
+                        background: #ffffff url("img_tree.png") no-repeat right top;
+                    }
+                </code>
+
+            </section>
+
+            <section class="main-section" id="WEB_RESPONSIVE">
+                <header class="header">
+                    <h2> WEB RESPONSIVE</h2>
+                </header>
+            
+                
+                <p class="parrafos"> ¿Qué es el diseño web adaptable?:</p>
+                <ul>
+                    <li> El diseño web receptivo hace que su página web se vea bien en todos los dispositivos.</li>
+                    <li> El diseño web receptivo utiliza solo HTML y CSS.</li>
+                    <li> El diseño web receptivo no es un programa ni un JavaScript.</li>
+                
+                </ul>
+
+                <p class="parrafos"> Diseñar para ofrecer la mejor experiencia a todos los usuarios:<p>
+                <p class="parrafos">Las páginas web se pueden ver utilizando muchos dispositivos diferentes: computadoras de escritorio, tabletas y teléfonos. Su página web debe verse bien y ser fácil de usar, independientemente del dispositivo. Las páginas web no deben omitir información para adaptarse a dispositivos más pequeños, sino adaptar su contenido para adaptarse a cualquier dispositivo:</p>
+                
+            
+                <img src="https://disenowebakus.net/imagenes/articulos/diseno-web-responsive-adaptable.jpg" alt="">
+                
+                <p class="parrafos"> Se denomina diseño web receptivo cuando usa CSS y HTML para cambiar el tamaño, ocultar, reducir, ampliar o mover el contenido para que se vea bien en cualquier pantalla.<p>
+                <h3>Medias Queries</h3>
+                <p class="parrafos">La consulta de medios es una técnica CSS introducida en CSS3. Utiliza la @mediaregla para incluir un bloque de propiedades CSS solo si una determinada condición es verdadera.</p>
+                <p class="parrafos">Ejemplo: Si la ventana del navegador tiene 600 píxeles o menos, el color de fondo será azul claro:</p>
+                <code>
+
+                    @media only screen and (max-width: 600px) {
+                        body {
+                        background-color: lightblue;
+                        }
+                    }
+                </code>
+
+            </section>
+
+            <section class="main-section" id="REFERENCIAS">
+
+                <header class="header">
+                    <h2> REFERENCIAS</h2>
+                </header>
+            
+
+                <p class="parrafos"> Toda la documentación de esta página ha sido tomada de <a href="https://www.w3schools.com/css/default.asp"> CSS TUTORIAL</a></p>
+            
+
+            </section>
+
+
+    </div>
+
+
+    </main>
+    
+</body>
+</html>
+        
+
+        
+
+
